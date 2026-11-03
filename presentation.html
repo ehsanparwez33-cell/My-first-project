@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blood Donation Camp</title>
+<style>
+* {
+ box-sizing: border-box;
+  }
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0; background: #f3f8f4; 
+  color: #1c2b24;
+   }
+.nav {
+  background: #0f3d2e;
+  color: #f4b942;
+  padding: 14px 30px;
+  font-weight: bold; 
+  font-size: 18px; 
+}
+.hero { 
+  background: #0f3d2e; 
+  color: white; 
+  display: flex; 
+  flex-wrap: wrap; 
+  align-items: center; 
+  justify-content: space-around; 
+  padding: 50px 20px; 
+}
+.hero h1 { 
+  font-size: 36px; 
+  margin: 0 0 10px; 
+}
+.hero a { 
+  display: inline-block; 
+  background: #f4b942; 
+  color: #0f3d2e; 
+  padding: 12px 28px; 
+  border-radius: 30px; 
+  text-decoration: none; 
+  font-weight: bold; 
+  margin-top: 10px; 
+}
+.circle { 
+  width: 170px; 
+  height: 170px; 
+  border-radius: 50%; 
+  border: 6px solid #f4b942; 
+  font-size: 70px; 
+  text-align: center; 
+  line-height: 160px; 
+}
+.sec { 
+  max-width: 850px; 
+  margin: 0 auto; 
+  padding: 35px 20px 0; 
+}
+h2 { 
+  color: #0f3d2e; 
+  border-bottom: 4px solid #d30c33; 
+  display: inline-block; 
+  padding-bottom: 4px; 
+}
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  background: white; 
+}
+th { 
+  background: #0f3d2e; 
+  color: white; 
+  padding: 10px; 
+  text-align: left; 
+}
+td { 
+  padding: 10px; 
+  border-bottom: 1px solid #d4e5d9; 
+}
+.row { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 14px; 
+}
+.card { 
+  flex: 1; 
+  min-width: 200px; 
+  background: white; 
+  border-top: 5px solid #f4b942; 
+  padding: 18px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 6px #0003; 
+}
+.tips p { 
+  background: white;
+  border-left: 5px solid #0f3d2e; 
+  padding: 10px 14px; 
+  margin: 8px 0; 
+}
+details { 
+  background: white; 
+  border: 1px solid #c5ddcc; 
+  border-radius: 8px; 
+  padding: 12px 16px; 
+  margin: 10px 0; 
+}
+summary { 
+  cursor: pointer; 
+  font-weight: bold; 
+  color: #0f3d2e; 
+}
+form { 
+  background: white; 
+  padding: 25px; 
+  border-radius: 12px; 
+  box-shadow: 0 2px 8px #0003; 
+}
+input, select, button { 
+  width: 100%; 
+  padding: 10px; 
+  margin: 5px 0; 
+  border: 2px solid #c5ddcc; 
+  border-radius: 6px; 
+  font-size: 15px; 
+}
+button { 
+  background: #f4b942; 
+  color: #0f3d2e; 
+  border: none; 
+  border-radius: 30px; 
+  font-weight: bold; 
+  cursor: pointer; 
+}
+.err { 
+  color: #c0392b; 
+  font-size: 13px; 
+}
+#ok { 
+  background: #d9f2e3; 
+  color: #0f3d2e; 
+  border-radius: 8px; 
+}
+.footer { 
+  background: #0f3d2e; 
+  color: white; 
+  text-align: center; 
+  padding: 30px 20px; 
+  margin-top: 50px; 
+  }
+</style>
+</head>
+<body>
+
+<div class="nav"> Blood Camp</div>
+
+<div class="hero">
+  <div>
+    <h1>Donate Blood, Save Lives</h1>
+    <p>One donation can save up to three lives.</p>
+    <a href="#reg">Register Now</a>
+  </div>
+
+</div>
+
+<div class="sec">
+  <h2>Blood Groups</h2>
+  <table>
+    <tr><th>Blood Group</th><th>Type</th></tr>
+    <tr><td><b>A+</b></td><td>Common</td></tr>
+    <tr><td><b>A-</b></td><td>Rare</td></tr>
+    <tr><td><b>B+</b></td><td>Common</td></tr>
+    <tr><td><b>B-</b></td><td>Rare</td></tr>
+    <tr><td><b>AB+</b></td><td>Universal Receiver</td></tr>
+    <tr><td><b>AB-</b></td><td>Rare</td></tr>
+    <tr><td><b>O+</b></td><td>Most Common</td></tr>
+    <tr><td><b>O-</b></td><td>Universal Donor</td></tr>
+  </table>
+</div>
+
+<div class="sec">
+  <h2>Who Can Donate?</h2>
+  <div class="row">
+    <div class="card"> Age 18 to 65 years</div>
+    <div class="card"> Weight at least 45 kg</div>
+    <div class="card"> Not donated in last 3 months</div>
+  </div>
+</div>
+
+<div class="sec">
+  <h2>Upcoming Camps</h2>
+  <div class="row">
+    <div class="card"><b>15 Nov 2026</b><p>CITY HALL - 9 AM to 4 PM</p></div>
+    <div class="card"><b>22 Nov 2026</b><p>CITY HOSPITAL  - 10 AM to 3 PM</p></div>
+    <div class="card"><b>05 Dec 2026</b><p>COLLEGE CLASSROOM - 9 AM to 2 PM</p></div>
+  </div>
+</div>
+
+<div class="sec tips">
+  <h2>Locations</h2>
+  <p>📍 Community Hall, Sector 1</p>
+  <p>📍 City Hospital Ground, Main Road</p>
+  <p>📍 College Auditorium, Campus Gate</p>
+</div>
+
+<div class="sec tips">
+  <h2>Donation Guidelines</h2>
+  <p>🍱 Donate se pehle healthy khana khayein</p>
+  <p>💧 Khoob paani piyein</p>
+  <p>🪪 ID proof saath rakhein</p>
+  <p>🚫 24 ghante tak alcohol na lein</p>
+  <p>🛋️ Donate ke baad 10-15 minute aaram karein</p>
+</div>
+
+<div class="sec">
+  <h2>FAQ (Sawal-Jawab)</h2>
+  <details><summary>Kya donation mein dard hota hai?</summary><p>Bas ek halki si chubhan lagti hai, jo few seconds mein khatam ho jati hai.</p></details>
+  <details><summary>Donation mein kitna time lagta hai?</summary><p>Poori process lagbhag 30 se 45 minute mein ho jati hai.</p></details>
+  <details><summary>Donation ke liye paise lagte hain?</summary><p>Nahi, blood donation bilkul free hai.</p></details>
+</div>
+
+<div class="sec" id="reg">
+  <h2>Donor Registration</h2>
+  <form id="f">
+    <label>Full Name</label><input type="text" id="name"><div class="err" id="e1"></div>
+    <label>Age</label><input type="number" id="age"><div class="err" id="e2"></div>
+    <label>Blood Group</label>
+    <select id="blood">
+      <option value="">-- Select --</option>
+      <option>A+</option><option>A-</option><option>B+</option><option>B-</option>
+      <option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+    </select>
+    <div class="err" id="e3"></div>
+    <label>Phone (10 digits)</label><input type="text" id="phone"><div class="err" id="e4"></div>
+    <button type="submit">Register Now</button>
+    <p id="ok"></p>
+  </form>
+</div>
+
+<div class="footer">
+  <h3>Contact Us</h3>
+  <p>📞 +91 9199268520</p>
+  <p>✉️ 2630btech2010@kiet.edu</p>
+  <p>Donate Blood, Save Lives ❤️</p>
+</div>
+
+<script>
+document.getElementById("f").onsubmit = function (e) {
+  e.preventDefault();
+  var n = name.value, a = age.value, b = blood.value, p = phone.value, ok = true;
+  e1.textContent = e2.textContent = e3.textContent = e4.textContent = "";
+  if (n === "") { e1.textContent = "Naam likhiye."; ok = false; }
+  if (a < 18 || a > 65) { e2.textContent = "Age 18 se 65 ke beech honi chahiye."; ok = false; }
+  if (b === "") { e3.textContent = "Blood group chuniye."; ok = false; }
+  if (p.length !== 10) { e4.textContent = "Phone 10 digits ka hona chahiye."; ok = false; }
+  if (ok) {
+    document.getElementById("ok").textContent = "🎉 Thank you, " + n + "! Aapka blood group " + b + " register ho gaya hai.";
+    this.reset();
+  }
+};
+</script>
+
+</body>
+</html>
